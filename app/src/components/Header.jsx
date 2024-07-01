@@ -1,26 +1,24 @@
 /* eslint-disable react/jsx-max-depth */
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { CiMenuBurger } from 'react-icons/ci';
 import { Helmet } from 'react-helmet';
 import logo from '../assets/logo.png';
 import NavBar from './NavBar';
 import NavBarMobile from './NavBarMobile';
-import ThemeContext from '../context/ThemeContext';
 import SocialMediaMenu from './SocialMediaMenu';
 
 function Header() {
-  const { isActive } = useContext(ThemeContext);
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={ isActive ? 'dark' : '' }>
+    <div>
       <Helmet>
         <title>GIE</title>
         <link rel="icon" type="image/png" href={ logo } />
       </Helmet>
       <header
-        className="bg-bg-dark
-      dark:bg-bg-light text-text-dark dark:text-text-light
+        className="bg-bg-light
+      dark:bg-bg-dark text-text-dark dark:text-text-light
       flex h-24 fixed top-0 left-0 right-0 z-50"
       >
         <div
