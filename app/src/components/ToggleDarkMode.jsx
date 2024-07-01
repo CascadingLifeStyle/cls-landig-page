@@ -8,7 +8,7 @@ function ToogleDarkMode() {
     <label className="relative inline-flex items-center cursor-pointer">
       <input
         type="checkbox"
-        checked={ isActive }
+        checked={ !isActive }
         onChange={ () => setIsActive(!isActive) }
         className="sr-only peer"
       />
@@ -24,7 +24,7 @@ function ToogleDarkMode() {
         dark:border-gray-600 peer-checked:bg-blue-600"
       />
       <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
-        {isActive ? 'Light Mode' : 'Dark Mode'}
+        {isActive ? 'Dark Mode' : 'Light Mode' }
       </span>
     </label>
   );
