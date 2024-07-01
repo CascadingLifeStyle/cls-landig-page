@@ -1,8 +1,16 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Hero from './sections/Hero';
+import ThemeProvider from './context/ThemeProvider';
+
 function App() {
   return (
-    <div className="text-orange-500">
-      Hello o
-    </div>
+    <ThemeProvider>
+      <Routes>
+        <Route path="/" element={ <Hero /> } />
+      </Routes>
+    </ThemeProvider>
+
   );
 }
 
