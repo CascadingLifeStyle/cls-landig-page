@@ -13,7 +13,7 @@ function Header() {
   return (
     <div>
       <Helmet>
-        <title>GIE</title>
+        <title>Cascading LifeStyle</title>
         <link rel="icon" type="image/png" href={ logo } />
       </Helmet>
       <header
@@ -27,7 +27,7 @@ function Header() {
         justify-around items-center"
         >
           <div className="flex items-center">
-            <img className="h-12 w-12" src={ logo } alt="Logo" />
+            <img className="h-16 w-20" src={ logo } alt="Logo" />
           </div>
           <div className="hidden md:flex md:items-center space-x-10">
             <NavBar />
