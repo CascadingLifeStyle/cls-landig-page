@@ -8,14 +8,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-light': '#1b0c44',
+        'primary-light': '#5dcec3',
         'secondary-light': '#A84A0C',
-        'bg-light': 'white',
+        'bg-light': '#5dcec3',
         'text-light': '#1b0c44',
-        'primary-dark': '#fff',
+        'primary-dark': '#5dcec3',
         'secondary-dark': '#A84A0C',
-        'bg-dark': '#1b0c44',
-        'text-dark': 'white',
+        'bg-dark': '#2f2b2a',
+        'text-dark': '#5dcec3',
       },
     },
   },
