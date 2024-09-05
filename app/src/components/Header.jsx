@@ -19,7 +19,7 @@ function Header() {
       <header
         className="bg-bg-light
       dark:bg-bg-dark text-text-dark dark:text-text-light
-      flex h-24 fixed top-0 left-0 right-0 z-50"
+      flex h-22 fixed top-0 left-0 right-0 z-50"
       >
         <div
           className="px-4
